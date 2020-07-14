@@ -1,0 +1,18 @@
+<view class="user-config">
+  <view>
+    添加新人员
+  </view>
+  <view class="user-list">
+    <view class="user-item" a:for="{{userList}}">
+      <view class="user-item__name">
+        {{item.name}}
+      </view>
+      <view class="user-item__show">
+        {{item.menu}}
+      </view>
+      <view class="user-item__edit">
+        编辑
+      </view>
+    </view>
+  </view>
+</view>

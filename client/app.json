@@ -1,0 +1,11 @@
+{
+  "pages": [
+    "pages/meal-list/meal-list",
+    "pages/random-draw/random-draw",
+    "pages/user-config/user-config",
+    "pages/meal-config/meal-config"
+  ],
+  "window": {
+    "defaultTitle": "喵-抽吃啥"
+  }
+}

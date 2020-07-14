@@ -1,0 +1,22 @@
+<view class="random-draw">
+  <view class="menu-block">
+    <view class="menu-block__title">今天抽签的列表</view>
+    <view class="menu-list">
+      <view a:for="{{menuList}}" class="menu-item">
+        <view class="menu-item__pin">
+        </view>
+        <view class="menu-item__text">
+          {{item.name}}
+        </view>
+        <view class="menu-item__price">
+          {{item.price}}
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="bottom-button">
+    <button type="primary" onTap="selectMeal">
+    抽签
+    </button>
+  </view>
+</view>

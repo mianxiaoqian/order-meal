@@ -1,0 +1,37 @@
+<view class="meal-list">
+  <view class="parting-line" onTap="goUserConfig">
+    <view>
+      配置吃饭人员
+    </view>
+    <am-icon type="right" size="20" />
+  </view>
+  <view class="switch-person">
+    <view class="switch-person_item" a:for="{{person}}">
+      <switch a:if="{{item.name}}" checked="{{item.checked}}" data-person="{{item}}" data-index="{{index}}"  onChange="switchChange"/>{{item.name}}
+    </view>
+  </view>
+  <!-- TODO上滑菜单吸顶 -->
+  <view class="parting-line" onTap="goMealConfig">
+    <view>
+      配置菜单列表
+    </view>
+    <am-icon type="right" size="20" />
+  </view>
+  <view class="meal-block">
+    <!-- <image mode="scaleToFill" class="meal-image" src="../../asserts/images/door.jpg"/> -->
+    <view class="menu-list">
+        <view a:for="{{menuList}}" class="menu-item">
+          <view a:if="{{item.name}}" class="menu-item_show {{item.selected ? 'menu-item--checked' : 'menu-item--unchecked'}}" data-item="{{index}}" onTap="changeItem">
+            <view class="menu-item_text">
+              {{item.name}}
+            </view>
+          </view>
+        </view>
+    </view>
+  </view>
+  <view class="bottom-button">
+    <button type="primary" onTap="onConfirm" class="bottom-button_confirm">
+    确认
+    </button>
+  </view>
+</view>

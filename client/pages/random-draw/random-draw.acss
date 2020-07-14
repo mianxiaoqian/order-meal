@@ -1,0 +1,57 @@
+.random-draw {
+  margin: 0 5px;
+  position:relative;
+  height:100vh;
+}
+.menu-block {
+  display: flex;
+  background-image: url('../../asserts/images/muban.jpeg')
+}
+.menu-block__title {
+  width: 5%;
+  margin-right:15px;
+  margin-left:15px;
+  align-self: center;
+  font-size: 18px;
+}
+.menu-list {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.menu-item {
+  width: 20px;
+  margin: 5px;
+  padding: 5px;
+  padding-top: 10px;
+  height: 120px;
+  position: relative;
+  text-align: center;
+  background-color: white;
+  box-shadow: 6px 6px 0 0 rgba(0, 0, 0, 0.05);
+}
+.menu-item__pin {
+  border-radius:50%;
+  width:6px;
+  height:6px;
+  border:3px solid rgb(194, 165, 165);
+  position:relative;
+  box-sizing:border-box;
+  left:7px;
+  top:-5px;
+}
+.menu-item__price {
+  position:absolute;
+  bottom:5px;
+  overflow:hidden;
+  font-size:10px;
+  width: 20px;
+  height: 14px;
+}
+
+.bottom-button {
+  width:100%;
+  bottom:5px;
+  position:absolute;
+}

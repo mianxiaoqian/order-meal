@@ -1,0 +1,21 @@
+<view class="meal-config">
+  <view>
+    添加新菜单
+  </view>
+  <view class="meal-list">
+    <view class="meal-item" a:for="{{mealList}}">
+      <view class="meal-item__img">
+        {{item.image}}
+      </view>
+      <view class="meal-item__show">
+        {{item.name}}
+        {{item.cold}}
+        {{item.spicy}}
+        午餐/晚餐
+      </view>
+      <view class="meal-item__edit">
+        编辑
+      </view>
+    </view>
+  </view>
+</view>
