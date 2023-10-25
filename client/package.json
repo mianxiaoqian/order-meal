@@ -4,7 +4,7 @@
   "main": "",
   "license": "MIT",
   "dependencies": {
-    "@alicloud/mpserverless-sdk": "^1.0.3",
+    "@alicloud/mpserverless-sdk": "^3.1.5",
     "mini-ali-ui": "^1.1.0"
   }
 }
